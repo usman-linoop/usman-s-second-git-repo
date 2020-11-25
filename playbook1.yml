@@ -1,0 +1,8 @@
+---
+- name: testing 1st playbook
+  hosts: all
+  tasks:
+    - name: restarting sshd
+      service:
+        name: sshd
+        state: restarted
